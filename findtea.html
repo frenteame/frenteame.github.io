@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVxWrOKPxjSHOhgj5xN3GhPuLyQ5F7s44&callback=myMap"></script>
+  
   <style>
   body {
       font: 20px Raleway, sans-serif;
@@ -111,7 +111,6 @@
     </div>
   </div>
 </div>
-<div id="googleMap" style="width:100%;height:400px;"></div>
 
 <script>
 function myMap() {
@@ -122,7 +121,7 @@ var mapProp= {
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVxWrOKPxjSHOhgj5xN3GhPuLyQ5F7s44&callback=myMap"></script>
 
 
 <!-- Footer -->
