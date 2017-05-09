@@ -90,7 +90,7 @@
   
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
- <div id="map" style="width:100%;height:400px;"></div>
+ <div id="googleMap" style="width:100%;height:400px;"></div>
 </div>
 
 <!-- Third Container (Grid) -->
@@ -114,37 +114,13 @@
 
  <script>
 
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var labelIndex = 0;
-
-function initialize() {
-  var bangalore = { lat: 12.97, lng: 77.59 };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: bangalore
-  });
-
-  // This event listener calls addMarker() when the map is clicked.
-  google.maps.event.addListener(map, 'click', function(event) {
-    addMarker(event.latLng, map);
-  });
-
-  // Add a marker at the center of the map.
-  addMarker(bangalore, map);
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
-
-// Adds a marker to the map.
-function addMarker(location, map) {
-  // Add the marker at the clicked location, and add the next-available label
-  // from the array of alphabetical characters.
-  var marker = new google.maps.Marker({
-    position: location,
-    label: labels[labelIndex++ % labels.length],
-    map: map
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVxWrOKPxjSHOhgj5xN3GhPuLyQ5F7s44"></script>
