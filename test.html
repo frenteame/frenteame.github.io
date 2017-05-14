@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/food-drinks-color-1/128/bubble-tea-2-128.png">
+  <title> Frentea </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+      font: 20px Raleway, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #A1F68C; /* green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
 
 <body>
 
+  
 <div id="map" style="width:100%;height:500px"></div>
 
+  
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Frentea</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="findfriends.html">FIND FRIENDS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">FIND TEA</h3>
+  <img src="http://thesnootyfoxteashop.com/wp-content/uploads/sites/116/2017/04/duluth-bubble-tea-banner.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Frentea users' most popular boba location is... T4! Map below :)</h3>
+  <!--<input type="button" id="btnSearch" value="Search" onclick="GetValue();" />
+  <p id="message" ></p> -->
+</div>
+  
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+ <!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Our Weekly Tea Picks</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Honey Milk Tea at ShareTea</p>
+       <img src="https://s3-media1.fl.yelpcdn.com/bphoto/6kKwEb1kokA161ugozwuTw/ls.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Liquid Gold at Teaspoon</p>
+      <img src="https://s3-media4.fl.yelpcdn.com/bphoto/ZlUUVCrD0vCochJnmSIIxA/348s.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Thai Milk Tea at Bambu</p>
+      <img src="https://s3-media1.fl.yelpcdn.com/bphoto/xfbKLbZVpv4F6CRVAME--g/348s.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+ <script>
 <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(51.508742,-0.120850);
@@ -18,5 +127,15 @@ function myMap() {
 
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCrYvjKTrKm3jWq9gOR5rg1QPR_GeVAslQ&callback=myMap"></script>
 
+  <!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p><a href="more.html"> Donna likes oolong milktea.</a></p>
+</footer>
 </body>
 </html>
+
+
+
+  
+
+
