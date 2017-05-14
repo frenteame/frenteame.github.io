@@ -112,26 +112,7 @@
 </form>
 </div>
   
-  <script>
-var obj = [
-{
-	img: 'http://i65.tinypic.com/16kt102.jpg',
-  text2: 'Sammi'
-},
-{
-	img: 'http://i63.tinypic.com/10xzno6.jpg',
-  text2: 'Clement'
-}
-];
 
-function changeText() {
-var num = Math.floor(Math.random() * 2);
-
-document.getElementById('img').src = obj[num].img;
-document.getElementById('text2').innerHTML = obj[num].text2;
-}
-</script>
-  
   
   
 <!-- Second Container -->
@@ -183,6 +164,26 @@ function displayImage(){
 
 }
   </script>
+  <script>
+var obj = [
+{
+	img: 'http://i65.tinypic.com/16kt102.jpg',
+  text2: 'Sammi'
+},
+{
+	img: 'http://i63.tinypic.com/10xzno6.jpg',
+  text2: 'Clement'
+}
+];
+
+function changeText() {
+var num = Math.floor(Math.random() * 2);
+
+document.getElementById('img').src = obj[num].img;
+document.getElementById('text2').innerHTML = obj[num].text2;
+}
+</script>
+  
 </footer>
 
 </body>
