@@ -100,15 +100,37 @@
      </table>     
     </div>
     <div class="col-sm-4"> 
-     
+     <img id="img">
+     <span id="text2"></span>
+      <button onclick="changeText()">
+        click
+      </button>
     </div>
   </div>
-    
-
-  
 </form>
-  
 </div>
+  
+  <script>
+var obj = [
+{
+	img: 'http://i65.tinypic.com/16kt102.jpg',
+  text2: 'Sammi'
+},
+{
+	img: 'http://i63.tinypic.com/10xzno6.jpg',
+  text2: 'Clement'
+}
+];
+
+function changeText() {
+var num = Math.floor(Math.random() * 2);
+console.log(obj[num]);
+document.getElementById('img').src = obj[num].img;
+document.getElementById('text2').innerHTML = obj[num].text2;
+}
+</script>
+  
+  
   
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
