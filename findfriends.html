@@ -102,7 +102,7 @@
   <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
  <h3 class="margin">Friend</h3><br>
-  <form name="imageForm">
+  
   
   
       <div class="row">
@@ -113,7 +113,7 @@
     <p>
 	<img id="img">
  	<span id="name"></span>
-	<span id="fact"></span>
+	
     </p>
       <button class="button" name = "button5" type="button" onclick="changeText()"> Find Friends</button> 
     </div>
@@ -121,7 +121,7 @@
 
     </div>
   </div>
-</form>
+
 </div>
   
 
@@ -180,22 +180,22 @@ function displayImage(){
 var obj = [
 {
   img: 'http://i65.tinypic.com/16kt102.jpg',
-  text2: 'Sammi'
+  name: 'Sammi'
 },
 {
   img: 'http://i63.tinypic.com/10xzno6.jpg',
-  text2: 'Clement'
+  name: 'Clement'
 },
 {
   img: 'http://i65.tinypic.com/25u5t8n.jpg',
-  text2: 'Tiffany Yu'
+  name: 'Tiffany Yu'
 }	
 ];
 
 function changeText() {
 	var num = Math.floor(Math.random() * 3);
 	document.getElementById('img').src = obj[num].img;
-	document.getElementById('text2').innerHTML = obj[num].text2;
+	document.getElementById('name').innerHTML = "Hi, I'm "+obj[num].text2;
 }
 </script>
   
