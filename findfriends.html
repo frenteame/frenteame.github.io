@@ -118,7 +118,7 @@
 	<span id="place"></span>
 	
     </p>
-      <button class="button" name = "button5" type="button" onclick="changeText()"> Find Friends</button> 
+      <button class="button" type="button" onclick="changeText()"> Find Friends</button> 
     </div>
     <div class="col-sm-4"> 
 
@@ -211,7 +211,7 @@ function changeText() {
 	document.getElementById('name').innerHTML = "Hi, I'm "+ obj[num].name;
 	document.getElementById('fact').innerHTML = "Besides "+ obj[num].fact + ",";
 	document.getElementById('drink').innerHTML = " I also love drinking "+obj[num].drink;
-	document.getElementById('place').innerHTML = " at " obj[num].place;
+	document.getElementById('place').innerHTML = " at " + obj[num].place;
 	
 }
 </script>
