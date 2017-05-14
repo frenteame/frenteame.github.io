@@ -126,7 +126,8 @@
     <div class="col-sm-4"> 
     <p>
 	<img id="img">
- 	<span id="text2"></span>	
+ 	<span id="name"></span>
+	<span id="fact"></span>
     </p>
       <button class="button" name = "button5" type="button" onclick="changeText()"> Find Friends</button>
     </div>
@@ -189,20 +190,23 @@ function displayImage(){
   <script>
 var obj = [
 {
-	img: 'http://i65.tinypic.com/16kt102.jpg',
+  img: 'http://i65.tinypic.com/16kt102.jpg',
   text2: 'Sammi'
 },
 {
-	img: 'http://i63.tinypic.com/10xzno6.jpg',
+  img: 'http://i63.tinypic.com/10xzno6.jpg',
   text2: 'Clement'
 }
+{
+  img: 'http://i63.tinypic.com/10xzno6.jpg',
+  text2: 'Clement'
+}	
 ];
 
 function changeText() {
-var num = Math.floor(Math.random() * 2);
-
-document.getElementById('img').src = obj[num].img;
-document.getElementById('text2').innerHTML = obj[num].text2;
+	var num = Math.floor(Math.random() * 2);
+	document.getElementById('img').src = obj[num].img;
+	document.getElementById('text2').innerHTML = "Hi I'm " + obj[num].text2;
 }
 </script>
   
