@@ -183,11 +183,53 @@ var obj = [
 	place: 'Honeyberry'
 },
 {
+	img: 'http://i65.tinypic.com/ezpmau.jpg',
+  	name: 'Donna L',
+	fact: 'having nine fingers',
+	drink: 'Oolong Milk Tea w boba',
+	place: 'Teaspoon'
+},
+{
   	img: 'http://i65.tinypic.com/16kt102.jpg',
   	name: 'Sammi C',
 	fact: 'smelling mostly everything',
 	drink: 'Honey milk tea w/ boba and lychee jelly',
 	place: '85°'
+},
+{
+  	img: 'http://i67.tinypic.com/ofdd1w.jpg', // placeholder pic 
+  	name: 'Vincent Y',
+	fact: 'having black hair',
+	drink: 'Okinawa milk tea w small boba',
+	place: 'T4'
+},
+{
+  	img: 'http://i67.tinypic.com/ofdd1w.jpg', // placeholder pic
+  	name: 'Kelly L',
+	fact: 'petting my new dog',
+	drink: 'Jasmine Milk Tea with no toppings',
+	place: 'Teaspoon'
+},
+{
+  	img: 'http://i65.tinypic.com/25u5t8n.jpg',
+  	name: 'Tiffany Yu',
+	fact: 'having more testosterone than most men',
+	drink: '0% sugar, no ice, iced jasmine milk green tea with boba',
+	place: 'T4'
+},
+{
+  	img: 'http://i65.tinypic.com/dz6ujq.jpg',
+  	name: 'Michael C',
+	fact: 'making memes',
+	drink: 'I dont have a preference. I dont like peppermint milk tea tho',
+	place: 'I dont care! :D'
+},
+{
+  	img: 'http://i63.tinypic.com/sdi8mf.jpg',
+  	name: 'Melissa C',
+	fact: 'thinking Buster Posey is cool',
+	drink: 'Milk tea with pudding',
+	place: 'Boba Guys'
 },
 {
   	img: 'http://i63.tinypic.com/10xzno6.jpg',
@@ -198,24 +240,23 @@ var obj = [
 },
 {
   	img: 'http://i65.tinypic.com/25u5t8n.jpg',
-  	name: 'Tiffany Yu',
-	fact: 'having more testosterone than most men',
-	drink: '0% sugar, no ice, iced jasmine milk green tea with boba',
-	place: 'T4 '
+  	name: 'Nicolas H',
+	fact: 'not finishing textExcel',
+	drink: 'Black Horlick Milk Tea',
+	place: 'ShareTea'
 }	
 ];
 
 function changeText() {
-	var num = Math.floor(Math.random() * 4);
-	document.getElementById('img').src = obj[num].img;
+	var num = Math.floor(Math.random() * 10);
+	document.getElementById('img').src = obj[num].img; 
 	document.getElementById('name').innerHTML = ":) Matched! Hi, I'm "+ obj[num].name + ".";
 	document.getElementById('fact').innerHTML = " Besides "+ obj[num].fact + ",";
 	document.getElementById('drink').innerHTML = " I also love drinking "+obj[num].drink + ".";
 	document.getElementById('place').innerHTML = "Maybe we could get boba and hang out at " + obj[num].place + " one day!";
 	
 }
-</script>
-  
+</script> 
 </footer>
 
 </body>
