@@ -113,6 +113,9 @@
     <p>
 	<img id="img">
  	<span id="name"></span>
+	<span id="drink"></span>
+	<span id="fact"></span>
+	<span id="place"></span>
 	
     </p>
       <button class="button" name = "button5" type="button" onclick="changeText()"> Find Friends</button> 
@@ -173,23 +176,43 @@
   <script>
 var obj = [
 {
-  img: 'http://i65.tinypic.com/16kt102.jpg',
-  name: 'Sammi'
+	img: 'http://i63.tinypic.com/1hz4w7.jpg',
+  	name: 'Jonathan C'
+	drink: 'HK Style  MT'
+	fact: 'working at Honeyberry'
+	place: 'Honeyberry'
 },
 {
-  img: 'http://i63.tinypic.com/10xzno6.jpg',
-  name: 'Clement'
+  	img: 'http://i65.tinypic.com/16kt102.jpg',
+  	name: 'Sammi C'
+	drink: 'Honey milk tea w/ boba and lychee jelly'
+	fact: 'I smell mostly everything. '
+	place: '85°'
 },
 {
-  img: 'http://i65.tinypic.com/25u5t8n.jpg',
-  name: 'Tiffany Yu'
+  	img: 'http://i63.tinypic.com/10xzno6.jpg',
+  	name: 'Clement N'
+	drink: 'agarose gel'
+	fact: 'being a pesca-pescatarian.'
+	place: 'McDonalds'
+},
+{
+  	img: 'http://i65.tinypic.com/25u5t8n.jpg',
+  	name: 'Tiffany Yu'
+	drink: '0% sugar, no ice, iced jasmine milk green tea with boba '
+	fact: 'having more testosterone than most men'
+	place: 'T4 '
 }	
 ];
 
 function changeText() {
-	var num = Math.floor(Math.random() * 3);
+	var num = Math.floor(Math.random() * 4);
 	document.getElementById('img').src = obj[num].img;
 	document.getElementById('name').innerHTML = "Hi, I'm "+ obj[num].name;
+	document.getElementById('fact').innerHTML = "Besides "+ obj[num].fact + ",";
+	document.getElementById('drink').innerHTML = " I also love drinking "+obj[num].drink;
+	document.getElementById('place').innerHTML = " at " obj[num].place;
+	
 }
 </script>
   
