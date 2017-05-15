@@ -229,11 +229,32 @@ var obj = [
 	fact: 'not finishing textExcel',
 	drink: 'Black Horlick Milk Tea',
 	place: 'ShareTea'
-}	
+},
+{
+  	img: 'http://i68.tinypic.com/b71eu9.jpg',
+  	name: 'Leonard W',
+	fact: 'FML',
+	drink: 'Green Apple Lychee Milk Tea',
+	place: 'T Pumps'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Klarizza',
+	fact: 'Jonathan Chai being a stinky house',
+	drink: 'White peppermint mocha coffee creamer',
+	place: 'What'
+},
+{
+  	img: 'http://i68.tinypic.com/2zi98o6.jpg', 
+  	name: 'Justin F',
+	fact: 'needing help with TextExcel (which also means Parsa needs help)',
+	drink: 'Matcha Milk Tea with lychee jelly',
+	place: 'T4'
+},
 ];
 
 function changeText() {
-	var num = Math.floor(Math.random() * 10);
+	var num = Math.floor(Math.random() * 13);
 	document.getElementById('img').src = obj[num].img; 
 	document.getElementById('name').innerHTML = ":) Matched! Hi, I'm "+ obj[num].name + ".";
 	document.getElementById('fact').innerHTML = " Besides "+ obj[num].fact + ",";
