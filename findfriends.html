@@ -320,12 +320,19 @@ var obj = [
 	fact: 'turning around whenever someone says the word \'Totoro\'',
 	drink: 'roasted oolong tea with sea salt foam',
 	place: '85'
+},
+{
+  	img: 'http://i67.tinypic.com/2dwb2ox.jpg', 
+  	name: 'Parsa I',
+	fact: 'being able to grow a beard (hell yeah)',
+	drink: 'Jasmine Milk Tea with Boba',
+	place: 'T4'
 }
 
 ];
 
 function changeText() {
-	var num = Math.floor(Math.random() * 23);
+	var num = Math.floor(Math.random() * 24);
 	document.getElementById('img').src = obj[num].img; 
 	document.getElementById('name').innerHTML = ":) Matched! Hi, I'm "+ obj[num].name + ".";
 	document.getElementById('fact').innerHTML = " Besides "+ obj[num].fact + ",";
