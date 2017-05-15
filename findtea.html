@@ -24,7 +24,7 @@
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+      color: #000000;
   }
   .bg-3 { 
       background-color: #ffffff; /* White */
@@ -115,16 +115,21 @@
 
 <script>
 function myMap() {
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var myCenter = new google.maps.LatLng(37.6010,-122.3921);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
+  var mapOptions = {center: myCenter, zoom: 18};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
+  var infowindow = new google.maps.InfoWindow({
+    content: "T4"
+  });
+  infowindow.open(map,marker);
+  
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCrYvjKTrKm3jWq9gOR5rg1QPR_GeVAslQ&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6egZEqjWWssRtzTYewEtISiXtxAzGP2c&callback=myMap"></script>
 
   <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
