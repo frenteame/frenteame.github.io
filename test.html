@@ -24,7 +24,7 @@
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+      color: #000000;
   }
   .bg-3 { 
       background-color: #ffffff; /* White */
@@ -50,9 +50,6 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
-  .map {
-      color: #000000;
-}
   </style>
 </head>
 
@@ -120,7 +117,7 @@
 function myMap() {
   var myCenter = new google.maps.LatLng(37.6010,-122.3921);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 20};
+  var mapOptions = {center: myCenter, zoom: 17};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
