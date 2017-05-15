@@ -97,7 +97,7 @@
 
   <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
- <h3 class="margin">Find A Friend</h3><br>
+ <h3 class="margin">Find a Friend</h3><br>
       <div class="row">
     <div class="col-sm-4">
     </div>
@@ -250,11 +250,82 @@ var obj = [
 	fact: 'needing help with TextExcel (which also means Parsa needs help)',
 	drink: 'Matcha Milk Tea with lychee jelly',
 	place: 'T4'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Claudia T',
+	fact: 'Jonathan not having pink hair',
+	drink: 'roasted oolong milk tea with boba/grass jelly and i use honey as the sweetener',
+	place: 'T4'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Tommy P',
+	fact: 'liking trains',
+	drink: 'Potted Plant with Boba',
+	place: 'T4'
+},
+{
+  	img: 'http://i65.tinypic.com/33neo9y.jpg', //Placeholder Pic
+  	name: 'Mimi N.',
+	fact: 'I like eating stir fried squash and deep fried tofu. I also really like eating Chicken Bakes from Costco [: ',
+	drink: 'Coffee Milk Tea w boba',
+	place: 'Tiger Tea'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Bethany W',
+	fact: 'loving tea',
+	drink: 'Jasmine milk tea w boba',
+	place: 'Eggettes'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Amanda Hall',
+	fact: 'dabbing',
+	drink: 'peach lychee green tea w boba',
+	place: 'Bambu'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Galina I',
+	fact: 'I like math.',
+	drink: 'Coffee Milk Tea with boba',
+	place: 'Tiger Tea'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Herman P',
+	fact: 'wearing a scarlet A on my chest',
+	drink: 'Thai Tea with Boba',
+	place: 'T4'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Alex F',
+	fact: 'pointing out that Jonathan has yellow hair now',
+	drink: 'honey green tea ',
+	place: 'eggettes'
+},
+{
+  	img: 'http://i66.tinypic.com/n6dmj4.jpg', //Placeholder Pic
+  	name: 'Matthew C',
+	fact: 'math being in my name and loving Calculus',
+	drink: 'Earl Grey Milk Tea w/ Boba',
+	place: 'Sharetea / Tiger Tea'
+},
+{
+  	img: 'https://vignette1.wikia.nocookie.net/parody/images/c/c9/Charlie.png/revision/latest?cb=20150918191308', //Placeholder Pic
+  	name: 'Kaitlyn Chan',
+	fact: 'turning around whenever someone says the word \'Totoro\'',
+	drink: 'roasted oolong tea with sea salt foam',
+	place: '85'
 }
+
 ];
 
 function changeText() {
-	var num = Math.floor(Math.random() * 13);
+	var num = Math.floor(Math.random() * 23);
 	document.getElementById('img').src = obj[num].img; 
 	document.getElementById('name').innerHTML = ":) Matched! Hi, I'm "+ obj[num].name + ".";
 	document.getElementById('fact').innerHTML = " Besides "+ obj[num].fact + ",";
